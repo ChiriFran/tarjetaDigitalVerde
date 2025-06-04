@@ -1,0 +1,75 @@
+.introMessageContainer {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    background-color: var(--main-color);
+    color: #2e2e2e;
+    overflow: hidden;
+}
+
+.introMessageContainer::after {
+    content: '';
+    position: absolute;
+    bottom: -5%;
+    left: 1rem;
+    width: 10%;
+    height: 100%;
+    background-image: url(../../media/backgroundImg/flor-parada.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;
+    z-index: 0;
+}
+
+
+.introMessageContainer::before {
+    content: '';
+    position: absolute;
+    bottom: -5%;
+    right: 1rem;
+    width: 10%;
+    height: 100%;
+    background-image: url(../../media/backgroundImg/flor-parada.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;
+    z-index: 0;
+}
+
+.introMessageContainer h2 {
+    border-top: 1px solid #2e2e2e;
+    border-bottom: 1px solid #2e2e2e;
+    padding: 3rem 2rem;
+    text-align: center;
+    font-family: 'Courier New';
+    font-weight: 400;
+}
+
+@media (max-width: 480px) {
+    .introMessageContainer h2 {
+        border-top: none;
+        border-bottom: none;
+        padding: 1rem 0.5rem;
+        font-size: 1rem;
+    }
+
+
+    .introMessageContainer::after {
+        bottom: -32%;
+        width: 20%;
+        height: 100%;
+        background-size: 120px;
+    }
+
+
+    .introMessageContainer::before {
+        bottom: -32%;
+        width: 20%;
+        height: 100%;
+        background-size: 120px;
+    }
+
+}

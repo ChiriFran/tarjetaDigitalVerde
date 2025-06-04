@@ -1,0 +1,66 @@
+.instagramHashtagContainer {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 1.2rem auto;
+    text-align: center;
+    border: 3px solid #eee;
+    padding: 20px;
+    background-color: var(--bg-color);
+    font-family: 'Courier New';
+}
+
+.instagramHashtagContainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../media/backgroundImg/fondo-flores.png);
+    background-position: top;
+    background-repeat: repeat;
+    background-size: 600px;
+    filter: brightness(100);
+    opacity: 0.03;
+}
+
+.instagramHashtagContainer img {
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.instagramHashtagContainer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.instagramHashtagContainer p {
+    font-size: 1rem;
+    margin: 0 0 2rem;
+    color: #d9d8d8;
+}
+
+.instagramHashtagContainer span {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    color: #eee;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 480px) {
+    .instagramHashtagContainer {
+        width: 90%;
+    }
+
+    .instagramHashtagContainer h2 {
+        font-size: 1rem;
+    }
+}
