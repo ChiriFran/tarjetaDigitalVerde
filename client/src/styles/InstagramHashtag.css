@@ -26,8 +26,7 @@
     background-position: top;
     background-repeat: repeat;
     background-size: 600px;
-    filter: brightness(100);
-    opacity: 0.03;
+    opacity: 0.05;
 }
 
 .instagramHashtagContainer img {

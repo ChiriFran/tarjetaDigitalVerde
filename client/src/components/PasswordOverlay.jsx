@@ -69,7 +69,12 @@ const PasswordOverlay = ({ musicRef }) => {
     };
 
     const handleAccess = (playMusic) => {
-        const enteredPassword = inputRef.current?.value;
+        let enteredPassword = inputRef.current?.value;
+
+        // Transforma la primera letra a minúscula, dejando el resto igual
+        if (enteredPassword && enteredPassword.length > 0) {
+            enteredPassword = enteredPassword.charAt(0).toLowerCase() + enteredPassword.slice(1);
+        }
 
         if (!passwordPreviouslyEntered) {
             if (enteredPassword === import.meta.env.VITE_PASSWORD) {
@@ -84,6 +89,7 @@ const PasswordOverlay = ({ musicRef }) => {
             closeOverlay(playMusic);
         }
     };
+
 
     if (!isVisible) return null;
 
