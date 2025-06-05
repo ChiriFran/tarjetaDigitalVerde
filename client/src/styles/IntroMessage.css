@@ -6,7 +6,7 @@
     justify-content: center;
     padding: 5rem 0;
     background-color: var(--main-color);
-    color: #2e2e2e;
+    color: var(--bg-color);
     overflow: hidden;
 }
 
@@ -40,8 +40,9 @@
 }
 
 .introMessageContainer h2 {
-    border-top: 1px solid #2e2e2e;
-    border-bottom: 1px solid #2e2e2e;
+    color: var(--bg-color);
+    border-top: 1px solid var(--bg-color);
+    border-bottom: 1px solid var(--bg-color);
     padding: 3rem 2rem;
     text-align: center;
     font-family: 'Courier New';

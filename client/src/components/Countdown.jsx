@@ -41,7 +41,6 @@ const Countdown = ({ targetDate }) => {
 
     return (
         <div className="countdown-container">
-            <h1 className="title">¡Mis 15!</h1>
             <div className="countdown-timer">
                 {timeUnits.map((unit, index) => (
                     <React.Fragment key={unit.label}>

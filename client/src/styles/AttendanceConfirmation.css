@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #2e2e2e;
+    background-color: var(--main-color);
     font-family: 'Courier New', Courier, monospace;
     z-index: 100;
 }
@@ -18,7 +18,7 @@
 .attendanceConfirmationContainer h2 {
     font-size: 2rem;
     font-weight: 700;
-    color: #eee;
+    color: var(--bg-color);
     padding: 1rem 0;
 }
 
@@ -27,7 +27,7 @@
     max-width: 600px;
     margin: 30px auto;
     padding: 20px;
-    background-color: #eee;
+    background-color: var(--bg-color);
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.5;
     z-index: 100;
@@ -87,8 +87,8 @@
 .boton-enviar {
     width: 100%;
     padding: 12px;
-    background-color: #2e2e2e;
-    color: #F8F4F0;
+    background-color: var(--main-color);
+    color: var(--bg-color);
     font-size: 16px;
     font-weight: bold;
     border: none;
@@ -113,7 +113,7 @@
 }
 
 .restriccionAlimentariaTitle {
-    color: #454545;
+    color: #151313;
 }
 
 @media (max-width: 480px) {

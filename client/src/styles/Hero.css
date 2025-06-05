@@ -15,7 +15,6 @@
     justify-content: center;
 }
 
-/* Capa con imagen de fondo */
 .heroMask {
     position: absolute;
     top: 0;
@@ -45,30 +44,62 @@
     pointer-events: none;
 }
 
-.heroNames {
+.heroTextGroup {
     position: absolute;
-    bottom: -20%;
-    left: 49%;
-    transform: translate(-50%, -50%);
     z-index: 2;
-    font-family: 'Great Vibes', cursive;
-    font-size: 15rem;
-    /* más grande si querés que destaque */
-    color: #f8f4f0;
-    font-weight: 400;
-    letter-spacing: 1px;
     text-align: center;
+    color: var(--bg-color);
+    font-family: 'Great Vibes', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Imagen para mobile */
+/* Textos individuales */
+.heroTopText {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.heroName {
+    font-size: 8rem;
+    font-weight: 400;
+}
+
+.heroBottomText {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+
+/* Posicionamiento desktop: centro total */
+@media (min-width: 769px) {
+    .heroTextGroup {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Posicionamiento mobile: arriba centrado */
 @media (max-width: 768px) {
     .heroMask {
         background-image: url('../../media/hero/hero-mobile.jpg');
     }
 
-    /* Texto en la esquina inferior derecha */
-    .heroNames {
-        font-size: 4rem;
-        bottom: 0;
+    .heroTextGroup {
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .heroName {
+        font-size: 6rem;
+    }
+
+    .heroTopText,
+    .heroBottomText {
+        font-size: 1.5rem;
     }
 }
